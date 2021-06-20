@@ -3,12 +3,23 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress",
+    "start": "npm run build && five-server ./dist -p 8000 "
   },
   "author": "Kurt Hanel",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "prettier": "^2.3.1"
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "node": "^16.3.0",
+    "prettier": "^2.3.1",
+    "three": "^0.129.0",
+    "webpack": "^5.39.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "webpack-cli": "^4.7.2"
   }
 }
